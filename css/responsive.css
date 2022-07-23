@@ -1,0 +1,149 @@
+/*media query
+css for mobile version hehe:)*/
+
+@media screen and (max-width: 768px) {
+  div#button-toggle {
+    color: white;
+    display: block; /*for mobile version only*/
+    z-index: 1; /*by giving the background color it left behind so have to give z-index to come at front*/
+  }
+
+  div#button-toggle {
+    margin-right: 15px;
+  }
+  .nav {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s ease;
+  }
+
+  .nav-active {
+    /*on jquery*/
+    left: 0;
+  }
+  /*for the closer button*/
+  #button-toggle i.nav-active:before {
+    /* on jquery*/
+    content: "\f00d";
+  }
+
+  .nav ul li {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .nav ul {
+    margin-top: 110px;
+  }
+
+  .header-info-parent h1 {
+    font-size: 18px;
+  }
+
+  header {
+    padding: 0px 40px;
+  }
+
+  .header-info-parent p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  section#welcome-text-Nepal h2 {
+    font-size: 23px;
+  }
+  section#welcome-text-Nepal p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  section#welcome-text-Nepal {
+    padding: 40px 0px;
+  }
+
+  .slides {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide-first {
+    width: 90%;
+    /* min-width: 90%; */
+    height: 350px;
+    margin: 20px 0px;
+  }
+
+  section#Book-now {
+    padding: 50px 0px;
+  }
+
+  .Book-content-parent {
+    flex-direction: column;
+  }
+
+  section#Book-now h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  div#clockdiv {
+    font-size: 20px;
+    margin: 40px 60px;
+    margin-left: 90px;
+  }
+
+  .small-text {
+    font-size: 14px;
+  }
+  section#blog {
+    margin: 40px 0px;
+  }
+
+  section#blog h3 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .blog-parent {
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+
+  .blog-info-parent {
+    margin-top: 30px;
+  }
+
+  .blog-content p {
+    font-size: 10px;
+  }
+  .blog-content h4 {
+    font-size: 14px;
+  }
+
+  .blog-info-parent ul li {
+    font-size: 10px;
+  }
+
+  .blog-img-parent {
+    width: 300px;
+  }
+
+  .footer-parent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-1st.footer-info h3 {
+    font-size: 18px;
+  }
+
+  p.copyright {
+    font-size: 13px;
+  }
+  /*dont forget to write the  responsive code for the login form*/
+}

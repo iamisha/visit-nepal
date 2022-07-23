@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*common classes*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "raleway";
+  font-weight: 600;
+}
+
+a {
+  font-family: "raleway";
+  font-weight: 600;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/*arrow to go up of the website*/
+i.fa.fa-arrow-up {
+  position: fixed;
+  bottom: 65px;
+  right: 25px;
+  background-color: teal;
+  color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*toggle button css for desktop version*/
+div#button-toggle {
+  display: none;
+}
+
+/*Header*/
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.menu-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+
+/*To decorate the logo of the website*/
+.logo-parent h2 {
+  font-size: 40px;
+  background: -webkit-linear-gradient(blue, red, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav ul li a {
+  color: #ffff;
+  padding: 20px;
+  /*anchor tag is inline tag so it is taking padding only from left right not from the top-bottom*/
+  position: relative;
+  /*here we set the position: relative to add the hover effect on the menu contents*/
+}
+
+.nav ul li a:before {
+  content: "s";
+  position: absolute;
+  top: 1;
+  left: 10px;
+  background-color: powderblue;
+  width: 0%;
+  height: 2px;
+  font-size: 0px;
+  transition: all 0.5s ease;
+}
+
+.nav ul li a:hover:before {
+  width: 74%;
+}
+
+/*to display the nav contents/menu in same line
+here it performs by the display: inline-block property.*/
+.nav ul li {
+  display: inline-block;
+}
+
+.nav-fixed {
+  background-color: #fff;
+  box-shadow: 2px 2px 10px #bbb;
+}
+
+.menu-parent {
+  padding: 10px 0px;
+}
+
+.nav-fixed h2 {
+  color: #00a8b4;
+}
+
+.nav-fixed ul li a {
+  color: #00a8b4;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+/*to set the video */
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+video#video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*to create the read more button*/
+.header-info-parent a {
+  background-color: #fff;
+  color: #00a8b4;
+  padding: 17px 45px;
+  display: inline-block;
+  margin-top: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*to create the hover effect of the Read More button*/
+.header-info-parent a:after {
+  content: "Click Here";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #00a8b4;
+  color: #fff;
+  width: 0%;
+  height: 100%;
+  line-height: 50px;
+  transition: all 0.5s ease;
+}
+
+.header-info-parent a:hover:after {
+  width: 100%;
+}
+
+/*to change the header font */
+.header-info-parent h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  padding: 20px 0px;
+  letter-spacing: 4px;
+}
+
+.header-info-parent p {
+  line-height: 30px;
+  font-size: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*welcome-text-Nepal*/
+section#welcome-text-Nepal h2 {
+  color: #343a40;
+  font-size: 45px;
+  padding-bottom: 12px;
+}
+
+section#welcome-text-Nepal {
+  text-align: center;
+  padding: 100px 0px;
+}
+
+section#welcome-text-Nepal p {
+  color: #777;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+/*slides section modification*/
+.slides {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.slide-first {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/bunjee.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60px;
+  min-width: 60px;
+  height: 300px;
+  border-radius: 40px;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+/*slide section hover*/
+.slide-first:hover {
+  min-width: 250px;
+}
+
+.slide-first:hover .slide-detail {
+  transform: rotate(0deg);
+  font-size: 22px;
+  left: 20px;
+  bottom: 20px;
+}
+
+.slide-detail {
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  color: #fff;
+  transform: rotate(-90deg);
+  font-size: 16px;
+  font-weight: 700px;
+  transition: all 0.5s ease;
+}
+
+/*changing the image of the slides alternatively*/
+/*starts*/
+.slide-second {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/metravel.jpg);
+}
+
+.slide-third {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/lumbiniimg.jpeg);
+}
+
+.slide-fourth {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/travelimage.jpeg);
+}
+
+.slide-fifth {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/ilamimg.jpeg);
+}
+
+.slide-sixth {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/childrenimg.jpg);
+}
+
+.slide-seventh {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/wetravel.jpg);
+}
+
+/*ends*/
+
+
+
+/*gallery css code starts here*/
+
+section#gallery {
+  margin: 100px 0px;
+}
+
+.gallery-item.filter img {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+  /*object-fit to make the equal height and width of the images as the different images have the different sizes...*/
+  transition: all 0.5s ease;
+}
+
+.filter-gall-parent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /*flex-wraps adjusts the images with  the 100 % of parent div/makes responsive*/
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1, 1.1);
+  /*(horizontal hover, vertical hover)*/
+  background-color: rgba(46, 222, 193, 0.5);
+  opacity: 0.7;
+  /*this blurs the image when we hover on it*/
+}
+
+.gallery-item {
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*overflow: hidden="helps the image to hover under the parent div, if we don't use it the image would hover out of the parent div"*/
+}
+
+/*gallery buttons css starts here*/
+button.filter-button {
+  background-color: teal;
+  color: #fff;
+  border: 1px solid teal;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+button.filter-button:focus {
+  background-color: #fff;
+  color: teal;
+  outline: none;
+}
+
+/* water-slider css code */
+#water-slider {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/touristimage.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0px;
+  color: white;
+  text-align: center;
+}
+
+#water-slider h3 {
+  font-size: 50px;
+}
+
+
+/*blog*/
+
+section#blog h3 {
+  text-align: center;
+  font-size: 40px;
+}
+
+section#blog {
+  margin: 100px 0px;
+}
+
+.blog-parent {
+  display: inline-block;
+  margin: 50px 0px;
+  align-items: center;
+}
+
+.blog-content {
+  display: flex;
+  align-items: center;
+}
+
+.blog-info-parent ul li {
+  display: inline-block;
+  font-size: 13px;
+  color: grey;
+  font-weight: 600px;
+  text-transform: uppercase;
+}
+
+.blog-info-parent {
+  margin-left: 30px;
+}
+
+.blog-img-parent {
+  width: 400px;
+  margin: 30px 0px;
+}
+
+.blog-info-parent h4 {
+  color: teal;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+.blog-info-parent p {
+  color: grey;
+  line-height: 23px;
+  font-size: 14px;
+}
+
+.blog-img-parent {
+  position: relative;
+}
+
+.blog-img-parent:before {
+  content: "4 Jun";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+}
+
+/*footer section*/
+.footer-parent {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0px;
+}
+
+footer {
+  border-top: 3px solid teal;
+}
+
+.footer-logo-heading {
+  font-size: 40px;
+  background: -webkit-linear-gradient(blue, red, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-1st.footer-info h3 {
+  color: #333;
+  font-size: 25px;
+  margin: 25px -25px;
+}
+
+.footer-1st.footer-info ul li a {
+  color: grey;
+  font-size: 14px;
+  padding-bottom: 8px;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.footer-1st.footer-info ul li a:hover {
+  padding-left: 5px;
+}
+
+/*copyright section*/
+p.copyright {
+  font-size: 15px;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+p.copyright a {
+  color: #fff;
+}
+
+p.copyright a:hover {
+  color: aqua;
+  font-size: 20px;
+}

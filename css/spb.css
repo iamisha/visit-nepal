@@ -1,0 +1,288 @@
+
+/*s for  service p for packages and b for book form * hehe */
+
+:root{
+   --main-color:teal;
+   --black:#222;
+   --white:#fff;
+   --light-black:#777;
+   --light-white:#fff9;
+   --dark-bg:rgba(0,0,0,.7);
+   --light-bg:#eee;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+}
+
+html{
+   font-size: 70%;
+   overflow-x: hidden;
+}
+
+section{
+   padding:5rem 10%;
+}
+
+
+.btn{
+   display: inline-block;
+   background: var(--black);
+   margin-top: 1rem;
+   color:var(--white);
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+}
+
+.btn:hover{
+   background: var(--main-color);
+}
+
+.heading-title{
+   text-align: center;
+   margin-bottom: 3rem;
+   font-size: 6rem;
+   text-transform: uppercase;
+   color:var(--black);
+}
+
+.services .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+   gap: 1.5rem;
+}
+
+.services .box-container .box{
+   padding:3rem 2rem;
+   text-align: center;
+   background: var(--main-color);
+   cursor: pointer;
+}
+
+.services .box-container .box:hover{
+   background: var(--black);
+}
+
+.services .box-container .box img{
+   height: 7rem;
+}
+
+.services .box-container .box h3{
+   color:var(--white);
+   font-size: 1.7rem;
+   padding-top: 1rem;
+}
+
+.home-packages{
+   background: var(--light-bg);
+}
+
+.home-packages .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+}
+
+.home-packages .box-container .box{
+   border:var(--border);
+   box-shadow: var(--box-shadow);
+   background: var(--white);
+}
+
+.home-packages .box-container .box:hover .image img{
+   transform: scale(1.1);
+}
+
+.home-packages .box-container .box .image{
+   height: 25rem;
+   overflow: hidden;
+}
+
+.home-packages .box-container .box .image img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   transition: .2s linear;
+}
+
+.home-packages .box-container .box .content{
+   padding:2rem;
+   text-align: center;
+}
+
+.home-packages .box-container .box .content h3{
+   font-size: 2.5rem;
+   color:var(--black);
+}
+
+.home-packages .box-container .box .content p{
+   font-size: 1.5rem;
+   color:var(--light-black);
+   line-height: 2;
+   padding:1rem 0;
+}
+
+.home-packages .load-more{
+   text-align: center;
+   margin-top: 2rem;
+}
+
+.home-offer{
+   text-align: center;
+}
+
+.home-offer .content{
+   max-width:70rem;
+   margin:0 auto;
+}
+
+.home-offer .content h3{
+   font-size: 3.5rem;
+   text-transform: uppercase;
+   color:var(--black);
+}
+
+.home-offer .content p{
+   font-size: 1.5rem;
+   color:var(--light-black);
+   line-height: 2;
+   padding:1rem 0;
+}
+
+.packages .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+}
+
+.packages .box-container .box{
+   border:var(--border);
+   box-shadow: var(--box-shadow);
+   background: var(--white);
+   display: none;
+}
+
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2),
+.packages .box-container .box:nth-child(3),
+.packages .box-container .box:nth-child(4),
+.packages .box-container .box:nth-child(5),
+.packages .box-container .box:nth-child(6){
+   display: inline-block;
+}
+
+.packages .box-container .box:hover .image img{
+   transform: scale(1.1);
+}
+
+.packages .box-container .box .image{
+   height: 25rem;
+   overflow: hidden;
+}
+
+.packages .box-container .box .image img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   transition: .2s linear;
+}
+
+.packages .box-container .box .content{
+   padding:2rem;
+   text-align: center;
+}
+
+.packages .box-container .box .content h3{
+   font-size: 2.5rem;
+   color:var(--black);
+}
+
+.packages .box-container .box .content p{
+   font-size: 1.5rem;
+   color:var(--light-black);
+   line-height: 2;
+   padding:1rem 0;
+}
+
+.packages .load-more{
+   text-align: center;
+   margin-top: 2rem;
+}
+
+.booking .book-form{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../images/touristimage.jpg);
+  background-attachment: fixed; /*to fix the image while scrolling*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+  color: white;
+}
+
+.booking .book-form .flex{
+   display: flex;
+   flex-wrap: wrap;
+   gap:2rem;
+}
+
+.booking .book-form .flex .inputBox{
+   flex:1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input{
+   width: 100%;
+   padding:1.2rem 1.4rem;
+   font-size: 1.6rem;
+   text-transform: none;
+   margin-top: 1.5rem;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #00a8b4;
+}
+
+.booking .book-form .flex .inputBox span{
+   font-size: 1.8rem;
+
+}
+
+.booking .book-form .btn{
+   margin-top: 5rem;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(51, 255, 221, 0.5);
+  } 
+  
+input[type="submit"] {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 12px 0px;
+    transition: all 0.5s ease;
+    cursor: pointer; /*it shows the hand with pointing when we move our cursor to the sumbit area...*/
+  }
+
+
+
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+   section{
+      padding:3rem 5%;
+   }
+
+}
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+   section{
+      padding:3rem 2rem;
+   }
+}
