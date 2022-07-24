@@ -69,47 +69,55 @@ the correct accent and pronunciation.-->
 
    <!--second section starts from here to create the slides-->
    <section id="slides-parent">
-     <div class="container">
-       <div class="slides">
-         <div class="slide-first">
-           <div class="slide-detail">
-             <p>Bunjee</p>
-           </div>
-         </div>
-         <div class="slide-first slide-second">
-           <div class="slide-detail">
-             <p>Swoyambhunath</p>
-           </div>
-         </div>
-         <div class="slide-first slide-third">
-           <div class="slide-detail">
-             <p>Rupandehi</p>
-           </div>
-         </div>
-         <div class="slide-first slide-fourth">
-           <div class="slide-detail">
-             <p>Kathmandu</p>
-           </div>
-         </div>
-         <div class="slide-first slide-fifth">
-           <div class="slide-detail">
-             <p>Illam</p>
-           </div>
-         </div>
-         <div class="slide-first slide-sixth">
-           <div class="slide-detail">
-             <p>Mustang</p>
-           </div>
-         </div>
-         <div class="slide-first slide-seventh">
-           <div class="slide-detail">
-             <p>Pokhara</p>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section>
-   <!--second section ends here-->
+    <div class="container">
+      <div class="slides">
+        <div class="slide-first">
+          <div class="slide-detail">
+            <p>Bunjee</p>
+
+          </div>
+        </div>
+        <div class="slide-first slide-second">
+          <div class="slide-detail">
+            <p>Swoyambhunath</p>
+
+          </div>
+        </div>
+        <div class="slide-first slide-third">
+          <div class="slide-detail">
+            <p>Rupandehi/Lumbini</p>
+
+          </div>
+        </div>
+        <div class="slide-first slide-fourth">
+          <div class="slide-detail">
+            <p>Garden of Dreams</p>
+
+          </div>
+        </div>
+        <div class="slide-first slide-fifth">
+          <div class="slide-detail">
+            <p>Ilam</p>
+
+          </div>
+        </div>
+        <div class="slide-first slide-sixth">
+          <div class="slide-detail">
+            <p>sanga</p>
+
+          </div>
+        </div>
+        <div class="slide-first slide-seventh">
+          <div class="slide-detail">
+            <p>Pokhara</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--second section ends here-->
+
 
    <!--fourth section starts here to form the gallery-->
    <section id="gallery">

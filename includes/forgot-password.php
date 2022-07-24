@@ -18,7 +18,7 @@ if(isset($_SESSION["login_sess"])) {
             <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <form action="forgot_process.php" method="POST">
+                    <form action="forgot_process.php" method="POST" autocomplete="off">
                         <div class="login_form">
                             <div class="form-group">
                                 <h2 style="font-size: 40px;

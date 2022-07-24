@@ -126,7 +126,7 @@ the correct accent and pronunciation.-->
         </div>
         <div class="slide-first slide-fourth">
           <div class="slide-detail">
-            <p>Kalinchowk</p>
+            <p>Garden of Dreams</p>
 
           </div>
         </div>
@@ -138,7 +138,7 @@ the correct accent and pronunciation.-->
         </div>
         <div class="slide-first slide-sixth">
           <div class="slide-detail">
-            <p>Manang</p>
+            <p>sanga</p>
 
           </div>
         </div>
